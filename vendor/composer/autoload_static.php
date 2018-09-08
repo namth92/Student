@@ -14,6 +14,7 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'a1944ad99b2c9dde1f8975eab6b29a40' => __DIR__ . '/..' . '/acacha/helpers/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
@@ -79,6 +80,7 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         array (
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
+            'Laravel\\BrowserKitTesting\\' => 26,
         ),
         'I' => 
         array (
@@ -103,6 +105,7 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         'C' => 
         array (
             'Cron\\' => 5,
+            'Creativeorange\\Gravatar\\' => 24,
         ),
         'B' => 
         array (
@@ -111,6 +114,9 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         'A' => 
         array (
             'App\\' => 4,
+            'Acacha\\User\\' => 12,
+            'Acacha\\Helpers\\' => 15,
+            'Acacha\\AdminLTETemplateLaravel\\' => 31,
         ),
     );
 
@@ -237,6 +243,10 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'Laravel\\BrowserKitTesting\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/browser-kit-testing/src',
+        ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
@@ -273,6 +283,10 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'Creativeorange\\Gravatar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/creativeorange/gravatar/src',
+        ),
         'BeyondCode\\DumpServer\\' => 
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src',
@@ -280,6 +294,18 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Acacha\\User\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/acacha/user/src',
+        ),
+        'Acacha\\Helpers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/acacha/helpers/src',
+        ),
+        'Acacha\\AdminLTETemplateLaravel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src',
         ),
     );
 
@@ -327,6 +353,49 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
     );
 
     public static $classMap = array (
+        'Acacha\\AdminLTETemplateLaravel\\AdminLTE' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/AdminLTE.php',
+        'Acacha\\AdminLTETemplateLaravel\\Compiler\\StubFileCompiler' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Compiler/StubFileCompiler.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\AdminLTEAdmin' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/AdminLTEAdmin.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\AdminLTEAdminAlt' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/AdminLTEAdminAlt.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\AdminLTEMenu' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/AdminLTEMenu.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\AdminLTEMenuAlt' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/AdminLTEMenuAlt.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\CreatesModels' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/CreatesModels.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\HasEmail' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/HasEmail.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\HasUsername' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/HasUsername.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Installable' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Installable.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\MakeAdminUserSeeder' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/MakeAdminUserSeeder.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\MakeMVC' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/MakeMVC.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\MakeMenu' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/MakeMenu.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\MakeRoute' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/MakeRoute.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\MakeV' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/MakeV.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\MakeVC' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/MakeVC.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\MakeView' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/MakeView.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Menus\\Menu' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Menus/Menu.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Menus\\RegularMenu' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Menus/RegularMenu.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\PublishAdminLTE' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/PublishAdminLTE.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\PublishAdminLTEAlt' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/PublishAdminLTEAlt.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\PublishAdminLTESidebar' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/PublishAdminLTESidebar.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\PublishAdminLTESidebarAlt' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/PublishAdminLTESidebarAlt.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\Controller' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/Controller.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\ControllerResourceRoute' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/ControllerResourceRoute.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\ControllerRoute' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/ControllerRoute.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\GeneratesCode' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/GeneratesCode.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\RegularRoute' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/RegularRoute.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\Route' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/Route.php',
+        'Acacha\\AdminLTETemplateLaravel\\Exceptions\\RouteTypeNotValid' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/RouteTypeNotValid.php',
+        'Acacha\\AdminLTETemplateLaravel\\Exceptions\\SpatieMenuAlreadyExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/SpatieMenuAlreadyExists.php',
+        'Acacha\\AdminLTETemplateLaravel\\Exceptions\\SpatieMenuDoesNotExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/SpatieMenuDoesNotExists.php',
+        'Acacha\\AdminLTETemplateLaravel\\Facades\\AdminLTE' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Facades/AdminLTE.php',
+        'Acacha\\AdminLTETemplateLaravel\\Filesystem\\FileAlreadyExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Filesystem/FileAlreadyExists.php',
+        'Acacha\\AdminLTETemplateLaravel\\Filesystem\\FileDoesNotExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Filesystem/FileDoesNotExists.php',
+        'Acacha\\AdminLTETemplateLaravel\\Filesystem\\Filesystem' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Filesystem/Filesystem.php',
+        'Acacha\\AdminLTETemplateLaravel\\Providers\\AdminLTETemplateServiceProvider' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Providers/AdminLTETemplateServiceProvider.php',
+        'Acacha\\AdminLTETemplateLaravel\\app\\Exceptions\\Handler' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/Handler.php',
+        'Acacha\\Helpers\\Console\\Commands\\PackableGeneratorCommand' => __DIR__ . '/..' . '/acacha/helpers/src/Console/Commands/PackableGeneratorCommand.php',
+        'Acacha\\Helpers\\Console\\Commands\\RequestMakeCommand' => __DIR__ . '/..' . '/acacha/helpers/src/Console/Commands/RequestMakeCommand.php',
+        'Acacha\\User\\GuestUser' => __DIR__ . '/..' . '/acacha/user/src/GuestUser.php',
+        'Acacha\\User\\Http\\Middleware\\GuestUser' => __DIR__ . '/..' . '/acacha/user/src/Http/Middleware/GuestUser.php',
+        'Acacha\\User\\Providers\\GuestUserServiceProvider' => __DIR__ . '/..' . '/acacha/user/src/Providers/GuestUserServiceProvider.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -335,6 +404,7 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -359,6 +429,10 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'Creativeorange\\Gravatar\\Exceptions\\InvalidEmailException' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Exceptions/InvalidEmailException.php',
+        'Creativeorange\\Gravatar\\Facades\\Gravatar' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Facades/Gravatar.php',
+        'Creativeorange\\Gravatar\\Gravatar' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Gravatar.php',
+        'Creativeorange\\Gravatar\\GravatarServiceProvider' => __DIR__ . '/..' . '/creativeorange/gravatar/src/GravatarServiceProvider.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -1790,6 +1864,32 @@ class ComposerStaticInit73a3c0ebf14d5c7c888675ce992d8bbd
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\ImpersonatesUsers' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/ImpersonatesUsers.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithAuthentication' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithAuthentication.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithConsole' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithConsole.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithContainer' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithContainer.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithDatabase' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithDatabase.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithPages' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithPages.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithSession' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithSession.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\MakesHttpRequests' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/MakesHttpRequests.php',
+        'Laravel\\BrowserKitTesting\\Concerns\\MocksApplicationServices' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/MocksApplicationServices.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\FormFieldConstraint' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/FormFieldConstraint.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\HasElement' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/HasElement.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\HasInElement' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/HasInElement.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\HasLink' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/HasLink.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\HasSource' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/HasSource.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\HasText' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/HasText.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\HasValue' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/HasValue.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\IsChecked' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/IsChecked.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\IsSelected' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/IsSelected.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\PageConstraint' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/PageConstraint.php',
+        'Laravel\\BrowserKitTesting\\Constraints\\ReversePageConstraint' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/ReversePageConstraint.php',
+        'Laravel\\BrowserKitTesting\\DatabaseMigrations' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/DatabaseMigrations.php',
+        'Laravel\\BrowserKitTesting\\DatabaseTransactions' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/DatabaseTransactions.php',
+        'Laravel\\BrowserKitTesting\\HttpException' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/HttpException.php',
+        'Laravel\\BrowserKitTesting\\TestCase' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/TestCase.php',
+        'Laravel\\BrowserKitTesting\\WithoutEvents' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/WithoutEvents.php',
+        'Laravel\\BrowserKitTesting\\WithoutMiddleware' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/WithoutMiddleware.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
