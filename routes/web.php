@@ -41,4 +41,24 @@ Route::group(['prefix' => '/student'], function(){
 				'as' => 'list',
 				'uses' => 'TestController@list'
 	]);
+
+	Route::post('/input', [
+	 			'as' => 'input',
+				'uses' => 'TestController@inputForm'
+	]);
+
+	Route::get('/list/{id}', [
+				'as' => 'list/{$id}',
+				'uses' => 'TestController@delete'
+	]);
+
+	Route::get('/input/{id}', [
+				'as' => 'input/{$id}',
+				'uses' => 'TestController@edit'
+	]);
+
+	Route::post('/input/{id}', [
+				'as' => 'input/{$id}',
+				'uses' => 'TestController@update'
+	]);
 });
